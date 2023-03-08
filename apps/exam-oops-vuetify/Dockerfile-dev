@@ -1,0 +1,23 @@
+# docker
+FROM node:16.13.2-alpine as build-stage
+WORKDIR /exam-oops-vuetify-root
+
+# COPY . .
+COPY apps/exam-oops-vuetify ./apps/exam-oops-vuetify
+COPY libs ./libs
+COPY packages ./packages
+COPY nx.json ./
+COPY package.json ./
+COPY tsconfig.base.json ./
+COPY tsconfig.base.packages.json ./
+COPY yarn.lock ./
+
+RUN yarn install
+RUN yarn build:2.0:dev
+
+# nginx config
+FROM nginx:stable-alpine as production-stage
+COPY  ./apps/exam-oops-vuetify/nginx/nginx.conf /etc/nginx/conf.d/default.conf
+COPY --from=build-stage /exam-oops-vuetify-root/apps/exam-oops-vuetify/dist /usr/share/nginx/html
+EXPOSE 8080
+CMD ["nginx", "-g", "daemon off;"]

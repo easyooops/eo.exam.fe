@@ -1,0 +1,36 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target": "esnext",
+    "declaration": true,
+    "useDefineForClassFields": true,
+    "allowSyntheticDefaultImports": true,
+    "composite": true,
+    "allowJs": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "strict": true,
+    "jsx": "preserve",
+    "sourceMap": false,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "lib": ["esnext", "dom", "WebWorker"],
+    "types": ["vuetify"],
+    "typeRoots": ["./node_modules/@types", "src/custom.d.ts"],
+
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  },
+  "include": [
+    // "../../libs/**/**/*",
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "vite.config.ts",
+    "src/main.js",
+    "src/main.js"
+  ]
+}

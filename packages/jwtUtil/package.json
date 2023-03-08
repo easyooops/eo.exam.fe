@@ -1,0 +1,30 @@
+{
+  "name": "@pkg/jwtUtil",
+  "version": "1.0.0",
+  "description": "jwtUtil",
+  "keywords": [
+    ""
+  ],
+  "author": "Bespin",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.js",
+  "files": [
+    "dist"
+  ],
+  "directories": {
+    "lib": "dist",
+    "test": "__tests__"
+  },
+  "scripts": {
+    "test:unit": "jest --verbose",
+    "build": "tsc",
+    "buid:hot": "tsc -w",
+    "build:packages": "tsc"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.1",
+    "jwt-decode": "^3.1.2"
+  },
+  "devDependencies": {}
+}

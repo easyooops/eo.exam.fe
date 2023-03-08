@@ -1,0 +1,13 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "target": "es2015",
+    "module": "esnext",
+    "strict": true,
+    "moduleResolution": "node" /* 모듈 해석 방법 설정: 'node' (Node.js) 혹은 'classic' (TypeScript pre-1.6). */,
+    "sourceMap": true /* '.map' 파일 생성 여부. */,
+    "noImplicitAny": false, //any타입 금지 여부
+    "declaration": true
+  },
+  "exclude": ["node_modules", "tmp"]
+}

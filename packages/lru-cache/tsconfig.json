@@ -1,0 +1,11 @@
+{
+  "extends": "../../tsconfig.base.packages.json",
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "lib": ["es6", "dom", "es2017"],
+    "outDir": "./dist"
+  },
+
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}

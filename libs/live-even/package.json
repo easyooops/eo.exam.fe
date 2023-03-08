@@ -1,0 +1,14 @@
+{
+    "name": "@lib/live-even",
+    "version": "0.0.0",
+    "main": "src/index.ts",
+    "scripts": {
+    },
+    "dependencies": {
+        "@pkg/is-even": "*"
+    },
+
+
+    "devDependencies": {
+    }
+}

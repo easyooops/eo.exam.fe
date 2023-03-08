@@ -1,0 +1,24 @@
+{
+  "name": "@pkg/pet-store-api",
+  "version": "0.0.1",
+  "description": "pet-store-api",
+  "keywords": [
+    ""
+  ],
+  "author": "Bespin",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.js",
+  "directories": {
+    "lib": "dist",
+    "test": "__tests__"
+  },
+  "scripts": {
+    "test:unit": "jest --verbose",
+    "build": "tsc",
+    "buid:hot": "tsc -w",
+    "build:packages": "tsc"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
