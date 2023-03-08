@@ -5,6 +5,9 @@
   "scripts": {
     "start:exam": "npx nx dev exam-oops-vue",
     "build:exam": "npx nx build exam-oops-vue",
+ 
+    "start:examr": "npx nx start exam-oops-react",
+    "build:examr": "npx nx build exam-oops-react",
 
     "start:examv": "npx nx dev exam-oops-vuetify",
     "build:examv:dev": "npx nx build:dev exam-oops-vuetify",

@@ -29,7 +29,7 @@ new PetApi().findPetsByStatus([PetStatusEnum.Sold]).then((response) => {
 
 ---
 
-date: "2023-02-23T06:27:04.074Z"
+date: "2023-03-08T05:17:02.178Z"
 author: Bespin
 
 ---

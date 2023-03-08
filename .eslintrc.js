@@ -46,7 +46,10 @@ module.exports = {
         "eslint:recommended",
         "plugin:prettier/recommended"
         // "prettier/react"
-      ]
+      ],
+      rules: {
+        "no-undef": "off"
+      }
     },
     // packages *.ts
     {
